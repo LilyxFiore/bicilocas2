@@ -17,7 +17,7 @@ function validateName(name){
   if(name.value.length==0 || /^\s+|\s+$/.test(name.value)){
     showToolTip("Debe ingresar su nombre",name); return false;
   }
-  for (var i = 1; i< name.value.length ; i++){
+  for (var i = 1; i< name.value.length ; i++){   
     if(!(/[A-ZÑÁÉÍÓÚa-zñáéíóú]/.test(name.value.split("")[i]))){
         showToolTip("Nombre no válido",name);return false;
       }
